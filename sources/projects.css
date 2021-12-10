@@ -1,0 +1,91 @@
+/* .index{
+        position: fixed;
+        background: rgba(0, 0, 0, 1);
+        color: #f1f1f1;
+        border: aquamarine solid 1px;
+        top: 15%;
+        right: -20%;
+        /*transform: translateX(-50%);*/
+        /* width: 40%;*//*
+        width: 40%;
+        height:70%;
+        padding: 1%;
+        word-wrap: break-word;
+        font-size: 120%;
+        box-shadow: rgba(127, 255, 212, 0.4) -5px 5px, rgba(127, 255, 212, 0.3) -10px 10px, rgba(127, 255, 212, 0.2) -15px 15px, rgba(127, 255, 212, 0.1) -20px 20px, rgba(127, 255, 212, 0.05) -25px 25px;
+    
+}
+
+.projects{
+    transform: translateX(20px) translateY(150px);
+}
+
+.project-box{
+    /*position: fixed;*//*
+    background: rgba(0, 0, 0, 1);
+    color: #f1f1f1;
+    border: aquamarine solid 1px;
+    /*top: 25%;
+    left: 12.5%;
+    margin: -1%;
+    width: 75%;
+    padding: 20px;
+    font-size: 100%;*//*
+    top: 30%;
+    left: 50%;
+    /*transform: translateX(-50%);*//*
+    width: 60%;
+    height:520px;
+    padding: 1%;
+    word-wrap: break-word;
+    font-size: 120%;
+    /*box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;*//*
+    box-shadow: rgba(127, 255, 212, 0.4) -5px 5px, rgba(127, 255, 212, 0.3) -10px 10px, rgba(127, 255, 212, 0.2) -15px 15px, rgba(127, 255, 212, 0.1) -20px 20px, rgba(127, 255, 212, 0.05) -25px 25px;
+}
+.project-box img{
+    height: 25%;
+    width: auto;
+}
+.project-box .img-header{
+    width: 100%;
+    height: auto;
+}
+
+@media (pointer:none), (pointer:coarse), (max-width: 980px) {
+    .project-box{
+        width: 90%;
+    }
+} */
+
+
+/* .item{
+    height: 100%;
+} */
+
+.img-header{
+    width: 100%;
+    height: auto;
+    transition-duration: 0.1s;
+}
+.img-header:hover{
+    width: 105%;
+    transition-duration: 0.1s;
+}
+.wrapper {
+    transform: translateX(20px) translateY(150px);
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 20px;
+    
+    color: #444;
+    box-shadow: rgba(127, 255, 212, 0.4) -5px 5px, rgba(127, 255, 212, 0.3) -10px 10px, rgba(127, 255, 212, 0.2) -15px 15px, rgba(127, 255, 212, 0.1) -20px 20px, rgba(127, 255, 212, 0.05) -25px 25px;
+
+  }
+  
+  .box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 1px;
+    padding: 20px;
+    font-size: 150%;
+  }

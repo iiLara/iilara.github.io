@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+body{font-family: 'Lato', sans-serif; background-color: black;}
+
+.header a{padding-right: 3%;}
+a:link{color: aquamarine;}
+a:visited{color: #5cbd9c;}
+a:hover{color: #6effcf; font-size:110%; transition-duration: 0.1s;}
+a:active{color: #a8ffe2; }
+#bgVideo {
+    position: fixed;
+    top: 50px;
+    margin: -1%;
+    width: 101%;
+    filter: blur(25px);
+}
+.header {
+    z-index: 99 !important;
+    position: fixed;
+    background: rgba(0, 0, 0, 1);
+    color: #f1f1f1;
+    margin: -1%;
+    width: 101%;
+    padding: 20px;
+    font-size: 200%;
+
+    box-shadow: rgba(127, 255, 212, 0.4) 0px 5px, rgba(127, 255, 212, 0.3) 0px 10px, rgba(127, 255, 212, 0.2) 0px 15px, rgba(127, 255, 212, 0.1) 0px 20px, rgba(127, 255, 212, 0.05) 0px 25px;
+}
+.header2 {
+    position: fixed;
+    background: rgba(0, 0, 0, 1);
+    color: #f1f1f1;
+    /*top: 25%;
+    left: 12.5%;
+    margin: -1%;
+    width: 75%;
+    padding: 20px;
+    font-size: 100%;*/
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    padding: 3%;
+    word-wrap: break-word;
+    font-size: 120%;
+    /*box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;*/
+    box-shadow: rgba(127, 255, 212, 0.4) -5px 5px, rgba(127, 255, 212, 0.3) -10px 10px, rgba(127, 255, 212, 0.2) -15px 15px, rgba(127, 255, 212, 0.1) -20px 20px, rgba(127, 255, 212, 0.05) -25px 25px;
+}
+
+@media (pointer:none), (pointer:coarse), (max-width: 980px) {
+    #bgVideo {
+        width: auto;
+        height: 100%;
+        left:-100%;
+    }
+    .header2{
+        top: 15%;
+        font-size: 200%;
+        padding: 6%;
+    }
+    .headerbg{
+        top: 15%;
+        font-size: 200%;
+        padding: 6%;
+    }
+}
