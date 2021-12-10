@@ -35,7 +35,7 @@ a:active{color: #a8ffe2; }
     width: 75%;
     padding: 20px;
     font-size: 100%;*/
-    top: 30%;
+    top: 23.5%;
     left: 50%;
     transform: translateX(-50%);
     width: 75%;
@@ -44,6 +44,11 @@ a:active{color: #a8ffe2; }
     font-size: 120%;
     /*box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;*/
     box-shadow: rgba(127, 255, 212, 0.4) -5px 5px, rgba(127, 255, 212, 0.3) -10px 10px, rgba(127, 255, 212, 0.2) -15px 15px, rgba(127, 255, 212, 0.1) -20px 20px, rgba(127, 255, 212, 0.05) -25px 25px;
+}
+.subheader{
+    transform: translateY(100px);
+    color: aquamarine;
+    font-size: 400%;
 }
 
 @media (pointer:none), (pointer:coarse), (max-width: 980px) {
