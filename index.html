@@ -1,70 +1,28 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Cubie</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-  </head>
-  <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas"></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
-      </div>
-      <!-- <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Cubie</div>
-      </div> -->
-    </div>
-    <script>
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/CubieWEBGL.loader.js";
-      var config = {
-        dataUrl: buildUrl + "/CubieWEBGL.data.gz",
-        frameworkUrl: buildUrl + "/CubieWEBGL.framework.js.gz",
-        codeUrl: buildUrl + "/CubieWEBGL.wasm.gz",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Cubie",
-        productVersion: "0.1",
-      };
+<head>
+  <link rel="stylesheet" href="sources/style.css">
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <title>Portfolio | Home</title>
+</head>
 
-      var container = document.querySelector("#unity-container");
-      var canvas = document.querySelector("#unity-canvas");
-      var loadingBar = document.querySelector("#unity-loading-bar");
-      var progressBarFull = document.querySelector("#unity-progress-bar-full");
-      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+<video autoplay muted loop id="bgVideo">
+    <source src="bg2.mp4" type="video/mp4">
+</video>
 
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        container.className = "unity-mobile";
-        config.devicePixelRatio = 1;
-      } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
-      }
-      loadingBar.style.display = "block";
+<div class="header">
+    <a href="./">Home</a>
+    <a href="about-me/">About Me</a>
+    <a href="projects/">Projects</a>
+    <a href="contact/">Contact</a>
+</div>
 
-      var script = document.createElement("script");
-      script.src = loaderUrl;
-      script.onload = () => {
-        createUnityInstance(canvas, config, (progress) => {
-          progressBarFull.style.width = 100 * progress + "%";
-        }).then((unityInstance) => {
-          loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-          };
-        }).catch((message) => {
-          alert(message);
-        });
-      };
-      document.body.appendChild(script);
-    </script>
-  </body>
-</html>
+
+
+<div class="header2">
+    <h3>Hello, World!</h3>
+    <h1><b>I'm Lara, I like to make stuff.</b></h1>
+    <br><br>
+    This is my portfolio website. Here, you will find information about myself and what I get up to. I have a collection of my <a href="projects/">many projects here.</a>  (some of which are interactible!)
+    <br><br>More information about myself can be found <a href="about-me/"> at the about me section.</a> There I'll have some more personal and descriptive attributes about my experiences and what makes me; me.
+    <br><br>If you are interested in contacting me for more information or any other regards, <a href="contact/"> see the contact page.</a>
+</div>
