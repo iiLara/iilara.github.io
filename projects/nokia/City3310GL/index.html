@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | City 3310</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 420px; height: 240px; background: #43523D"></canvas>
+    <script src="Build/City3310GL.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/City3310GL.data",
+        frameworkUrl: "Build/City3310GL.framework.js",
+        codeUrl: "Build/City3310GL.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "City3310",
+        productName: "City 3310",
+        productVersion: "0.1",
+      });
+    </script>
+  </body>
+</html>
