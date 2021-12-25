@@ -32,7 +32,7 @@
         <br><br>
         <img src="image1.png" class="thumbnail">
         <br>
-        The movement featured in the video is temporary also, as most of my efforts are being funnelled into developing the terrain generation algorithm. Updates will be posted
+        The movement featured in the video is temporary also, as most of my efforts are being funnelled into developing the terrain generation algorithm of which there is not much to show for at the moment. Updates will be posted
         here as I make progress.
         <br><br>
         A development I'm very proud of is the Atmosphere shader made to surround the planets and literally add atmosphere to the environment and make planets appear very pretty
@@ -40,6 +40,9 @@
         the sun is also accounted to make natural lighting due to the atmosphere.
         <br>
         <img src="image3.png" class="thumbnail">
+        <img src="planetray.png" class="thumbnail">
+        <br><br>
+        A problem I encountered was large floating point precision, and how the larger a float becomes, the less precise its decimal part becomes. I managed to solve this issue by making a seamless transition occur every 1000 units that translates the player back to 0,0,0 and translates everything else relative to that transformation.
     </div>
     <br><br><br>
     <!--
