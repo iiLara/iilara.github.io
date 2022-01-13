@@ -27,9 +27,11 @@
         <div style="color:red">!! Game may take a few seconds to load and hang on a green screen for a bit. !!</div><br>
       <h5><strong>Controls</strong></h5>
 <ul><li>WASD - Move</li><li>←↑↓→ - Look</li><li>Space - Jump</li><li>E - Interact</li><li>Q - Shoot</li><li>X - View objective(s)</li></ul><br><br>
-        This project was made for the Nokia 3310 Game Jam, but proved to be more of a tech demo than a game. The game's theme was related to horde control, of which zombies losely fit. The aim of the Nokia 3310 game jam is to produce a game that consists of just 2 colours in an 84x48 resolution and single channel mono audio. There can also only be 11 inputs, none of which can be from the mouse.
+        
+        This project was made for the Nokia 3310 Game Jam, but proved to be more of a shader showcase than a game. The game's theme was related to horde control, of which zombies losely fit. The aim of the Nokia 3310 game jam is to produce a game that consists of just 2 colours in an 84x48 resolution and single channel mono audio. There can also only be 11 inputs, none of which can be from the mouse.
         <br><img src="nokia-poster.PNG" class="thumbnail"><br>
-        I first approached it from developing a shader to allow for visual 3D graphics within such a small screen. This was accomplished by combining a custom dither and outline shader, tying it all together with some maths. Eventually I was happy with the results after modifying values and such.
+        I first approached it from developing a shader to allow for visual 3D graphics within such a small screen. Being restricted by a 84x48 screen is very difficult, so I knew that objects had to be pronounced. The way I did this was by making an outline shader, contributing a lot to show the general shape of objects and guide the player. However, this alone resutls in consfusing visuals as it is difficult to see depth. In order to fix this problem I developed a dither shader that takes the luminosity into a greyscale (float 0.0-1.0) texture and dither that. The dither was tricky to make as the output had to be a low resolution, yet Unity gave a full-res luminosity texture.
+      <br>Reapplying the dithered texture results in a combined shader that fairly well pronounces the 3D shape and depth.
         <br><video autoplay muted loop class="thumbnail" poster="nokia-poster.PNG">
           <source src="dev.mp4" type="video/mp4">
         </video><br>
