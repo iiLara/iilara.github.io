@@ -19,8 +19,8 @@
         Frontier
     </div>
     <br><br>
-    <video autoplay muted loop class="thumbnail" poster="frontier-poster.PNG">
-        <source src="short.mp4" type="video/mp4">
+    <video autoplay muted loop class="thumbnail" poster="51ss1.png">
+        <source src="tb51.mp4" type="video/mp4">
     </video>
     
     <br><br>
@@ -29,13 +29,10 @@
         This is the project made for my Computer Science project. It is still a work in progress at the moment, however progress is coming along steadily.<br>
         The game implements the <a href="http://paulbourke.net/geometry/polygonise/">Marching cubes algorithm</a> and uses 3D Noise functions to produce a procedurally 
         generated planet that the user can explore.<br>
-        I plan to implement procedural trees, which will be a fun challenge to research tree algorithms. I also plan to improve the water shader shown below by adding specular reflections and waves.
-        <br><br>
-        <img src="A51B10E8-B6F5-4273-8F56-4143719066E9.png" class="thumbnail">
+        There is a lot I plan to improve and add upon this project, including trees, improving terrain generation, implementing a loose-story and much more.<br><br>
+        <img src="51ss2.png" class="thumbnail">
         <img src="planetTerrain2.jpeg" class="thumbnail">
-        <br>
-        The movement featured in the video is temporary also, as most of my efforts are being funnelled into developing the terrain generation algorithms and other terrain features. Updates will be posted
-        here as I make progress.
+        The ocean shader uses triplanar mapping to map various noise textures for floating foam and ripples. It also uses the depth texture to calculate where foam should be generated, though I feel that this aspect could be improved later.
         <br><br>
         A development I'm very proud of is the Atmosphere shader made to surround the planets and literally add atmosphere to the environment and make planets appear very pretty
         from close and afar. It functions as expected, giving a blue sky within the planet, and blue spherical haze on the outside. The rotation of the atmosphere relative to
